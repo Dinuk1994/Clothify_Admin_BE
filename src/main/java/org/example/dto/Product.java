@@ -11,6 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class Product {
     private Long id;
     private String name;
+    private String code;
     private String description;
     private double price;
     private int qtyInStock;
