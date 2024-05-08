@@ -24,7 +24,11 @@ import java.util.Optional;
 public class ProductServiceImpl implements ProductService {
     private final ModelMapper modelMapper;
     private final ProductRepository productRepository;
-    public String uploadDirectory = System.getProperty("user.dir") + "/public/Clothify_images";
+
+//    public String uploadDirectory = System.getProperty("user.dir") + "/public/Clothify_images";
+
+    public String uploadDirectory = "D:/iCD/Web Sup/Clothify/ClothifyFE/Clothify/public/Images";
+
 
     @Override
     public boolean addProduct(Product product, MultipartFile imageFile)  {
