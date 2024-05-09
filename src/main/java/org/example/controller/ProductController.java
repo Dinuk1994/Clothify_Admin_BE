@@ -28,15 +28,15 @@ public class ProductController {
 //    }
 
     @PostMapping("/post")
-    public ResponseEntity<String> addProduct(@ModelAttribute Product product ,@RequestParam ("image") MultipartFile file) throws IOException {
+    public ResponseEntity<Object> addProduct(@ModelAttribute Product product ,@RequestParam ("image") MultipartFile file) throws IOException {
         if (file.isEmpty()){
-            return  ResponseEntity.ok("File not added");
+            return  ResponseEntity.ok("File not found");
         }
         File tempFile = File.createTempFile("temp", null);
         file.transferTo(tempFile);
         productService.addProduct(tempFile,product);
         System.out.println(product);
-        return ResponseEntity.ok("Product added successfully");
+        return ResponseEntity.ok("product added");
     }
 
     @GetMapping("/get")
