@@ -17,3 +17,7 @@ n
 >src/main/java/org/example/service/Impl/ProductServiceImpl.java,8\a\8a34a46ba413498da73e3a21abe90f8be3307503
 \
 ,src/main/java/org/example/config/Config.java,d\5\d514533ae08f51b637f28ccaedf541eb2a7d8d5f
+Q
+!clothify-images-33d82a54ded4.json,4\3\43d690556d49ef1cf0175a0e7cb6dbb34a95982a
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
